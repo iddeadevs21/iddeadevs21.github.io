@@ -8,7 +8,11 @@ function sendEmail(name, email, phone, message) {
         Subject : "Iddeadevs web contact",
         Body : name + " " + phone + " " + message,
 	}).then(
-		message => alert("Mensaje enviado!")
+		message => {
+            alert("Mensaje enviado!");
+            var form = document.getElementById("contact_form");
+            form.reset();
+        }
 	);
 }
 
