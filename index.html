@@ -519,7 +519,7 @@
                             Inicia tu proyecto ahora
                         </h2>
                     </div>
-                    <form method="post" name="contact-us" action="">
+                    <form method="post" name="contact-us" id="contact_form" action="">
                         <div class="row">
                             <div class="col-md-12 form-group">
                                 <input type="text" class="form-control" id="name" name="name" placeholder="Nombre">
@@ -529,9 +529,6 @@
                             </div>
                             <div class="col-md-12 form-group">
                                 <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Teléfono">
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <input type="text" class="form-control" id="websiteUrl" name="websiteUrl" placeholder="Empresa">
                             </div>
                             <div class="col-md-12 form-group">
                                 <textarea class="form-control" id="message" name="message" rows="6" placeholder="Tu Mensaje ..."></textarea>
@@ -631,9 +628,10 @@
 	<script src="vendor/lightcase/lightcase.js"></script>
 	<script src="vendor/waypoints/waypoint.min.js"></script>
 	 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script src="https://smtpjs.com/v3/smtp.js"></script>  
+     <script src="js/mail.js"></script>  
 	 
 	<!-- Main JS -->
 	<script src="js/app.min.js "></script>
-	<script src="//localhost:35729/livereload.js"></script>
 </body>
 </html>
